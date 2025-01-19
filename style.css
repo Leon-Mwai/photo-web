@@ -1,0 +1,316 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container to centralize content */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+ /* Header */
+header {
+    background: linear-gradient(45deg, #fbb034, #ffdd00); /* Warm gradient from orange to yellow */
+    color: #fff;
+    padding: 40px 0;  /* Increased padding for more breathing space */
+    border-bottom: 4px solid #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Georgia', serif; /* Elegant, serif font */
+    font-size: 3.5em; /* Larger font size for prominence */
+    font-weight: bold;
+    letter-spacing: 2px; /* Increased spacing for a more polished look */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header h1:hover {
+    color: #ff6f61; /* Soft coral color when hovered */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61; /* Soft coral color on hover */
+    text-decoration: underline;
+}
+
+  
+  /* Gallery Section */
+  .gallery {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    margin-top: 30px;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .photo {
+    flex: 1 1 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+    border: 5px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .photo img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #ffecb3;
+    padding: 40px 0;
+  }
+  
+  .testimonials h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .testimonial p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .testimonial strong {
+    font-size: 1.4em;
+    color: #ff6f61;
+  }
+  
+  /* About Us Section */
+  .about-us {
+    background-color: #ffe0b2; /* Light peach color */
+    padding: 40px 0;
+  }
+  
+  .about-us h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .about-us p {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Bio Section */
+  .bio {
+    background-color: #fff;
+    padding: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bio h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .bio p {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  /* Contact Form Section */
+  .contact-form {
+    background-color: #e1f5fe; /* Light blue background */
+    padding: 40px 0;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #f39c12;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 300;
+    border-top: 4px solid #fff;
+  }
+  
+  footer p {
+    font-size: 1em;
+    font-style: italic;
+  }
+  /* General Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px 0;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu links */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li {
+    padding: 12px 20px;
+    text-align: left;
+}
+
+.dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown link hover effect */
+.dropdown-content li a:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+/* Dropdown main item hover */
+.dropdown:hover > a {
+    color: #ff6f61; /* Change to coral color when hovering over the main dropdown item */
+    text-decoration: underline;

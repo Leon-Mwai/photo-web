@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Photography Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Photography Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        
+        <!-- Dropdown Menu for Gallery -->
+        <li class="dropdown">
+          <a href="#">Gallery</a>
+          <ul class="dropdown-content">
+            <li><a href="#" onclick="showGallery('nature')">Nature</a></li>
+            <li><a href="#" onclick="showGallery('portraits')">Portraits</a></li>
+            <li><a href="#" onclick="showGallery('events')">Events</a></li>
+            <li><a href="#" onclick="showGallery('travel')">Travel</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Gallery Section - Appears first -->
+<section class="gallery">
+  <div class="container">
+    <h2>My Favorite Photos</h2>
+
+    <!-- Nature Gallery -->
+    <div class="photo-grid" id="nature-gallery">
+      <div class="photo">
+        <img src="https://t4.ftcdn.net/jpg/02/56/10/07/360_F_256100731_qNLp6MQ3FjYtA3Freu9epjhsAj2cwU9c.jpg" alt="Nature Photo 1">
+      </div>
+      <div class="photo">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/025/287/278/small_2x/beautiful-landscape-in-the-mountains-nature-background-ai-generated-photo.jpg" alt="Nature Photo 2">
+      </div>
+      <div class="photo">
+        <img src="https://t4.ftcdn.net/jpg/02/01/78/01/360_F_201780104_hetXS26W8alnsbDKbpnr4sVizJfiO12w.jpg" alt="Nature Photo 3">
+      </div>
+    </div>
+
+    <!-- Portraits Gallery -->
+    <div class="photo-grid" id="portraits-gallery" style="display:none;">
+      <div class="photo">
+        <img src="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Portrait Photo 1">
+      </div>
+      <div class="photo">
+        <img src="https://andrewstuder.com/wp-content/uploads/2020/04/AF3I3830-scaled.jpg" alt="Portrait Photo 2">
+      </div>
+      <div class="photo">
+        <img src="https://cdn.pixabay.com/photo/2023/11/10/02/30/woman-8378634_1280.jpg" alt="Portrait Photo 3">
+      </div>
+    </div>
+
+    <!-- Events Gallery -->
+    <div class="photo-grid" id="events-gallery" style="display:none;">
+      <div class="photo">
+        <img src="https://www.aleitevents.com/wp-content/uploads/2019/02/ABCF1-19-scaled.jpg" alt="Event Photo 1">
+      </div>
+      <div class="photo">
+        <img src="https://cdn.encoreglobal.com/wp-content/uploads/sites/2/2020/10/13122712/Encore_EventType_TheatreConcertandSpecialEvents_4.jpg" alt="Event Photo 2">
+      </div>
+      <div class="photo">
+        <img src="https://www.gl-events.com/sites/default/files/styles/max_2600x2600/public/2019-03/gl_events_venues_riocentro_jeuness_congress.jpg?itok=iBTJdcEr" alt="Event Photo 3">
+      </div>
+    </div>
+
+    <!-- Travel Gallery -->
+    <div class="photo-grid" id="travel-gallery" style="display:none;">
+      <div class="photo">
+        <img src="https://damoclesjournal.com/wp-content/uploads/2022/02/0x0.jpg?w=1024" alt="Travel Photo 1">
+      </div>
+      <div class="photo">
+        <img src="https://www.state.gov/wp-content/uploads/2020/11/shutterstock_186964970-scaled.jpg" alt="Travel Photo 2">
+      </div>
+      <div class="photo">
+        <img src="https://itc.gov.my/wp-content/uploads/2019/03/Meaning-of-travelling.jpg" alt="Travel Photo 3">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"The photos I received were absolutely stunning! I couldn't have asked for a better photographer to capture my special day."</p>
+      <p><strong>- Peter M.</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>"A true professional with an eye for detail. The experience was fantastic, and the results speak for themselves!"</p>
+      <p><strong>- Kashi K.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-us">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>I believe in the power of photography to preserve moments, memories, and emotions. My journey started with a camera in hand and an eye for detail. Over the years, I’ve honed my craft to capture not just images, but <em>stories</em> that resonate with viewers. Let's create something beautiful together!</p>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- JavaScript for Gallery Switching -->
+<script>
+  function showGallery(category) {
+    // Hide all gallery sections
+    const galleries = document.querySelectorAll('.photo-grid');
+    galleries.forEach(gallery => gallery.style.display = 'none');
+    
+    // Show the selected gallery based on category
+    const selectedGallery = document.getElementById(category + '-gallery');
+    if (selectedGallery) {
+      selectedGallery.style.display = 'flex';
+    }
+  }
+</script>
+
+</body>
+</html>
